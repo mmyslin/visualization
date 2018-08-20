@@ -46,16 +46,16 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #222;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-weight: 600;
+  font-family: "TitilliumText25L", "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 800;
   line-height: 1.2;
-  letter-spacing: normal;
-  text-transform: uppercase;
   text-shadow: none;
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 2.5em; }
+  font-size: 2.5em; 
+  letter-spacing: -3px;
+}
 
 .reveal h2 {
   font-size: 1.6em; }
