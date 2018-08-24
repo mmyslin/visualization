@@ -1,5 +1,5 @@
 
-var size = 200
+var size = 15
 var nrow = Math.trunc(Math.sqrt(size))
 var mainCluster = Array(nrow)
 var leftoverSize = size - nrow*nrow
@@ -35,7 +35,7 @@ var grid = d3.select("#grid")
     .attr("cx", radius)
     .attr("cy", radius);
 
-    // Append leftovers to bottom
+// Append leftovers to bottom
 
     grid
          .append("g")
