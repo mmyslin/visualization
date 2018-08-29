@@ -20,14 +20,96 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
+<script src='https://d3js.org/d3.v4.min.js'></script>
+<script src='../d3/clustergrids/makeCluster.js'></script>
+
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
 
+<section><iframe data-src="ahttp://colorbrewer2.org/#type=sequential&scheme=GnBu&n=6"   width= 2800, height =500></iframe><br>
+	A visual <b>network of citations</b> maps the story of <i>separate but equal</i> in American caselaw.</section>
+
+
+
+<section><img src="launchAngles.png" width=600><br>
+
+	This literal representation of launch angles makes it easy to see how they affect the ball’s path.</section>
+
+<section><h1>Designing for the brain</h1><ul>
+	<li>Color
+		<li>Space
+			<li>Language
+				<li>Time
+</section>
 
 
 <section>
+	<b>Daubert Tracker Reports per year</b>
+	<p>
+	<svg width="600" height="500" id="histogramBlank"></svg>
+<script src='https://d3js.org/d3.v4.min.js'></script>
+<script src='../d3/histogram/histogramBlank.js'></script><br>
+This literal representation of launch angles makes it easy to see how they affect the ball’s path.
+</section>
+
+
+<section>
+	<b>Daubert Tracker Reports per year</b>
+	<p>
+	<svg width="600" height="500" id="histogramFilled"></svg>
+<script src='https://d3js.org/d3.v4.min.js'></script>
+<script src='../d3/histogram/histogramFilled.js'></script><br>
+This literal representation of launch angles makes it easy to see how they affect the ball’s path.
+</section>
+
+<!--<section>
+<img src="california.png" width=600><br>
+<b>sequential</b>This literal representation of launch angles makes it easy to see how they affect the ball’s path.
+</section>-->
+
+
+
+
+
+<section>
+<img src="heatTable538.png" width=600><br>
+<b>sequential</b>This literal representation of launch angles makes it easy to see how they affect the ball’s path.
+</section>
+
+<section><iframe data-src="ahttps://projects.fivethirtyeight.com/redistricting-maps/"   width= 2800, height =500></iframe><br>
+	<b>diverging</b>Various redistricting plans reveal specific <b>trade-offs</b> in optimizing certain priorities over others.</section>
+
+<section>
+<img src="justices.png" width=400><br>
+<b>qualitative</b>This literal representation of launch angles makes it easy to see how they affect the ball’s path.
+</section>
+
+<section>
+<table><tr><td><img src="heatTable538Thumb.png" height=200></td><td><img src="redistrictingThumb.png" height=200></td><td><img src="justicesThumb.png" height=200></td></tr></table><br>
+Keeping colors consistent.
+</section>
+
+<section><iframe data-src="ahttp://colorbrewer2.org/#type=sequential&scheme=GnBu&n=6"   width= 2800, height =500></iframe><br>
+	ColorBrewer</section>
+
+<section><h1>Designing for the brain</h1><ul>
+	<li>Color
+		<li>Space
+			<li>Language
+				<li>Time
+</section>
+
+
+<section>
+<img src="Gestalt.png" width=600><br>
+Something about the <b>Gestalt</b> psychology.
+</section>
+
+
+<!--<section>
 	<table style="font-size: 0.5em;line-height: 0.75em">
 		<tr style="background-color: #ffffff;"><td >Trump keeps Trumpin'</td><td width=100px>•<br>•<br>•<br><br><br></td><td width=100px>•<br>•<br><br><br></td><td width=100px>•<br>•<br></td></tr>
 		<tr><td>Trump mellows out</td><td>•<br>•<br>•<br><br><br></td><td>•<br>•<br>•<br>•<br></td><td>•<br>•<br>•<br></td></tr>
@@ -38,16 +120,19 @@
 </table><br>
 	A visual <b>network of citations</b> maps the story of <i>separate but equal</i> in American caselaw.</section>
 
-</section>
+</section>-->
 
 
 				<section><h1>Data Visualization</h1><p><br><b>Mark Myslin</b><br>mark@ravellaw.com<br>
 					<!---<a href="mailto:mark@ravellaw.com">mark@ravellaw.com</a>-->
 				</iframe></section>
 
-								<section><h1>Visual Data Stories</h1><p><br><b>Mark Myslin</b><br>mark@ravellaw.com<br>
-					<!---<a href="mailto:mark@ravellaw.com">mark@ravellaw.com</a>-->
-				</iframe></section>
+								<section><table>
+									<tr>
+										<th><center><img src="x.png" width=300px><br>Visual <br>data stories</th>
+										<th><center><img src="x.png" width=300px><br>Effective <br>visualization</th>
+										<th><center><img src="x.png" width=300px><br>D3.js<br>hands-on</th></tr>
+								</table></section>
 
 
 
@@ -67,20 +152,60 @@
 <section><img src="Cheapmeat.png" height=500px><br>
 	A newspaper headline is wrapped in a <b>feedback loop</b> that summarizes the story told in the article.</section>
 
-<section><iframe data-src="ahttps://projects.fivethirtyeight.com/redistricting-maps/"   width= 2800, height =500></iframe><br>
-	Various redistricting plans reveal specific <b>trade-offs</b> in optimizing certain priorities over others.</section>
 
-	<section><img src="FourteenPaths.png" height=500px><br>
-	<b>Individual data points</b> show how data volume—and confidence in a hypothesis—can grow over time.</section>
+
+
+<section>
+	<svg width="600" height="500" id="venndiagram"></svg>
+	<script src='pictoVenn1.js'></script>
+	<br>
+	<b>Individual data points</b> show how confidence in a hypothesis can grow via <i>Bayesian belief update</i>.<br></section>
+
+
+<section>
+	<svg width="600" height="500" id="venndiagram2"></svg>
+	<script src='pictoVenn2.js'></script>
+<br>
+	<b>Individual data points</b> show how confidence in a hypothesis can grow via <i>Bayesian belief update</i>.</section>
+
+
+
+<section>
+	<svg width="600" height="500" id="venndiagram3"></svg>
+	<script src='pictoVenn3.js'></script>
+<br>
+	<b>Individual data points</b> show how confidence in a hypothesis can grow via <i>Bayesian belief update</i>.</section>
+
+
+
+<!---	<section><img src="FourteenPaths.png" height=500px><br>
+	<b>Individual data points</b> show how confidence in a hypothesis can grow via <i>Bayesian belief update</i>.</section>
 
 
 	<section><iframe data-src="ahttp://archive.nytimes.com/www.nytimes.com/interactive/2012/11/02/us/politics/paths-to-the-white-house.html?_r=0"   width= 2800, height =500></iframe><br>
 	A <b>scenario map</b> can help navigate complex dependencies.</section>
 
 
-
+-->
 
 			<!--	<section><< part1   >> << part2 >> << part3 >> << exam  >></section>-->
+
+
+<section>
+	<h1>Effective visualization</h1>
+	<ul>
+		<li>It makes a point.
+		<li>It's easy to understand.
+		<li>It doesn't lie.
+	</section>
+
+	<section><h1>It makes a point</h1>
+	Maybe: table of narrative frames with examples from previous section
+		</section>
+
+	<section><h1>It's easy to understand</h1>
+	Maybe: table of narrative frames with examples from previous section
+		</section>
 
 
 

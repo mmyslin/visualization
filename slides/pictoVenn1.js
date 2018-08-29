@@ -1,15 +1,15 @@
 
 // set svg params
 
-var svgWidth = 800, svgHeight = 600;
+var svgWidth = 800, svgHeight = 500;
 
 // set venn diagram params
 
-var xcenters = [-15,0,15];
-var ycenters = [-40,0,-40];
+var xcenters = [-20,0,20];
+var ycenters = [-30,10,-30];
 var centers = [xcenters, ycenters];
 var colors = ["red","green","blue"];
-var radius = 175;
+var radius = 160;
 var margin =10;
 
 // set clustergrid params
@@ -74,27 +74,15 @@ function labelCircle(label, x, y){
 
 labelCircle("Opinions", 0, 30);
 labelCircle("Dockets", 650, 30);
-labelCircle("Reports", 325, 525);
+labelCircle("Reports", 325, 475);
 
 venndiagram
 .append("text")
 .text("\u25CF Expert mention")
-.attr("y", 500)
+.attr("y", 450)
 .attr("x", 610)
 .attr("font-family", "TitilliumText25L")
 .attr("font-weight", 300)
 .attr("font-size", 25);
-
-
- 
-makeCluster(venndiagram, 12, margin, radiusClusterGrid, marginClusterGrid, -45, -70);
-makeCluster(venndiagram, 12, margin, radiusClusterGrid, marginClusterGrid, -5, -80);
-makeCluster(venndiagram, 12, margin, radiusClusterGrid, marginClusterGrid, 35, -70);
-
-makeCluster(venndiagram, 12, margin, radiusClusterGrid, marginClusterGrid, -35, -15);
-makeCluster(venndiagram, 12, margin, radiusClusterGrid, marginClusterGrid, -5, -30);
-makeCluster(venndiagram, 12, margin, radiusClusterGrid, marginClusterGrid, 25, -15);
-
-makeCluster(venndiagram, 12, margin, radiusClusterGrid, marginClusterGrid, -5, 30);
 
 
