@@ -14,6 +14,31 @@ body {
   background: #fff;
   background-color: #fff; }
 
+  .citation {
+  position: absolute;
+  display: block;
+  right: -30px;
+  bottom: -20px;
+  z-index: 31;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.4);
+  width: 500px;
+  padding: 5px; 
+  text-align: right;
+margin: 0 3px;}
+
+.reveal a {
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: underline;
+  -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  transition: color .15s ease; 
+  font-size: 12px;
+}
+
+
 .reveal {
   font-family: "TitilliumText25L", "Source Sans Pro", Helvetica, sans-serif;
   font-size: 42px;
@@ -210,17 +235,8 @@ body {
 /*********************************************
  * LINKS
  *********************************************/
-.reveal a {
-  color: #2a76dd;
-  text-decoration: none;
-  -webkit-transition: color .15s ease;
-  -moz-transition: color .15s ease;
-  transition: color .15s ease; }
 
-.reveal a:hover {
-  color: #6ca0e8;
-  text-shadow: none;
-  border: none; }
+
 
 .reveal .roll span:after {
   color: #fff;
